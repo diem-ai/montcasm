@@ -1,0 +1,9 @@
+1cpu 1task 20core, 32.23521640545792, 50 assets - 1cpu - 1task - 20core - 100000 simulation - 20 years of historical data 
+1cpu 1task 40core, 16.344682015577952, 50 assets - 1cpu - 1task - 40core - 100000 simulation - 20 years of historical data 
+1cpu 1task 80core, 9.785573956436581, 50 assets - 1cpu - 1task - 80core - 100000 simulation - 20 years of historical data 
+1cpu 1task 100core, 8.727225983142853, 50 assets - 1cpu - 1task - 100core - 100000 simulation - 20 years of historical data 
+1cpu 1task 128core, 8.46849168419838, 50 assets - 1cpu - 1task - 128core - 100000 simulation - 20 years of historical data 
+1cpu 50task 2core, 8.11870979891883, 50 assets - 1cpu - 50task - 2core - 100000 simulation - 20 years of historical data
+1cpu 128task 1core, 8.137469474607045, 50 assets - 1cpu - 128task - 1core - 100000 simulation - 20 years of historical data
+
+

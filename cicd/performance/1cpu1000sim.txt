@@ -1,0 +1,6 @@
+1, 8.470354277624024, 30 assets 1 cpu 1 task 1 core 1000 times
+20, 0.6567539712455538, 30 assets 1 cpu 1 task 20 cores 1000 times
+40, 0.33971807817618055, 30 assets 1 cpu 1 task 40 cores 1000 times
+80, -1, 30 assets 1 cpu 1 task 80 cores 1000 times
+100, -1, 30 assets 1 cpu 1 task 100 cores 1000 times
+128, -1, 30 assets 1 cpu 1 task 120 cores 1000 times

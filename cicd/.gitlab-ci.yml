@@ -1,0 +1,20 @@
+job:
+
+  image: python:3.8-slim-buster
+
+  before_script:
+    - 'command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan -p 8822 10.1.11.102 >> ~/.ssh/known_hosts
+
+  script:
+      - pip3 install -r requirements.txt
+      - python test_backtestsim.py
+      - python test_montecarlosim.py
+      - echo $PWD
+      - scp -P 8822 -r $PWD/* dbui@10.1.11.102:~/
+      - ssh dbui@10.1.11.102 -p 8822 "cd backtesting ; sbatch jobs/1cpu.sh"

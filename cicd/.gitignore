@@ -1,0 +1,6 @@
+*.pyc
+*cpython*.pyc
+*.html
+*png
+testoutput/*
+*/__pycache__/*

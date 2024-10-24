@@ -1,0 +1,13 @@
+backtesting
+pandas
+numpy
+sklearn
+llvmlite
+matplotlib
+numba
+seaborn
+pytest
+dask[complete]
+dask-cuda
+
+
